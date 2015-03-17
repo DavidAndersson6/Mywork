@@ -1,0 +1,23 @@
+<script src="http://spelprogrammering.nu/simple.js">
+
+  function start ()
+  {
+    circle1 ={x:100, y: 100, radie:50,  speed:10};
+    rectangle1 ={x:200, y: 200, width: 100, height: 100, speed:10};
+    rectangle2 ={x:300, y:300, width: 100, height: 100, speed:10};
+  }
+    function update()
+    {
+      clearScreen();
+   circle1.x = circle1.x + circle1.speed;
+  circle(circle1.x, circle1.y, circle1.radie, "red");
+      
+      rectangle1.y = rectangle1.y + rectangle1.speed;
+      rectangle(rectangle1.x, rectangle1.y, rectangle1.width, rectangle1.height, "blue");
+       rectangle2.x = rectangle2.x + rectangle2.speed;
+      rectangle(rectangle2.x, rectangle2.y, rectangle2.width, rectangle2.height, "yellow");
+     
+    }
+  
+  
+</script>
