@@ -1,0 +1,24 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="bounce.css">
+<script language="JavaScript" src="dynlib.js"></script>
+<script language="JavaScript" src="bouncingimages.js"></script>
+</head>
+<body>
+<body onLoad="javascript:loadBouncingImages();">
+<div id="boxed" onclick="suit()">
+
+
+</div>
+<a href="shop.html" id="myButton">Enter</a>
+<script>
+function suit(){document.getElementById("boxed").innerHTML ="<h2>Suit Up!</h2>";hideshow("myButton");}
+function hideshow(elem) {
+var showhide =document.getElementById(elem).style;
+showhide.display = showhide.display == "inline-block" ? "none" : "inline-block";
+}
+
+</script>
+</body>
+</html>
